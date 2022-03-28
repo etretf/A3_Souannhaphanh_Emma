@@ -1,0 +1,197 @@
+body {
+  background: linear-gradient(270deg, #b0185c, #1895b0, #337cce);
+  background-size: 400% 400%;
+
+  -webkit-animation: backgroundGradient 10s ease infinite;
+  -moz-animation: backgroundGradient 10s ease infinite;
+  animation: backgroundGradient 10s ease infinite;
+}
+
+/* Gradient generated from: https://www.gradient-animator.com/ */
+@-webkit-keyframes backgroundGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes backgroundGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes backgroundGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/* Styling for header and h1 */
+header {
+  background-color: azure;
+  width: 50vw;
+  border-radius: 10px;
+  padding: 2vw;
+  margin: 0 auto;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+}
+
+header h1 {
+  text-align: center;
+  font-weight: bold;
+}
+/* Styling for each question cluster */
+.question {
+  background-color: azure;
+  border-radius: 10px;
+  width: 50vw;
+  margin: 0 auto;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+  padding: 2vw;
+}
+/* p styling */
+.question p {
+  font-weight: bold;
+}
+/* Remove the default 1.5em left padding for form-check */
+.form-check {
+  margin-left: -1.5em;
+}
+/* Make radio buttons invisible */
+input[type="radio"] {
+  display: none;
+}
+/* input label styling */
+label {
+  display: block;
+  border: 1px rgb(185, 185, 185) solid;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 1vw;
+  transition: ease-in 0.2s;
+}
+/* Label changes colour on hover to let user know 
+which option they are hovering over on desktop */
+label:hover {
+  /* box-shadow: 1px 1px 5px 2px rgba(131, 131, 131, 0.75); */
+  background-color: rgb(230, 230, 230);
+}
+/* When the invisible radio input is checked, label will change colour instead */
+input:checked ~ label {
+  background-color: rgb(182, 182, 182);
+}
+/* Button styling */
+.btn-container {
+  width: 50vw;
+  margin: 0 auto;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+}
+#submitBtn {
+  padding: 1vw;
+  width: inherit;
+  color: rgb(39, 39, 39);
+  font-size: 2vw;
+  font-weight: bold;
+}
+/* Result section styling */
+.resultDiv {
+  background-color: azure;
+  border-radius: 10px;
+  width: 40vw;
+  margin: 0 auto;
+  margin-top: 10vw;
+  margin-bottom: 10vw;
+  padding: 2vw;
+  height: 500px;
+}
+.resultDiv h3 {
+  text-align: center;
+  font-weight: bold;
+}
+.resultDiv p {
+  text-align: center;
+}
+/* Img styling */
+.imgDiv {
+  height: 300px;
+  margin: 0 2vw;
+}
+/* set width, max-width and height to 100% to make image fit in imgDiv properly */
+.imgDiv img {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+/* Media queries for responsize layout */
+@media (max-width: 991.98px) {
+  header {
+    width: 70vw;
+  }
+  header h1 {
+    font-size: 5vw;
+    text-align: center;
+  }
+  .resultDiv {
+    width: 70vw;
+    margin: 0 auto;
+    margin-top: 10vw;
+    margin-bottom: 10vw;
+    padding: 2vw;
+    height: 400px;
+  }
+  .imgDiv {
+    height: 75%;
+  }
+  h3 {
+    font-size: 3vw;
+  }
+  .question {
+    width: 70vw;
+    padding: 3vw;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+  }
+  .form-check {
+    margin-left: -1.5em;
+  }
+  p {
+    font-size: 2vw;
+  }
+  .btn-container {
+    width: 70vw;
+    margin-bottom: 4vw;
+  }
+  #submitBtn {
+    margin: 0 auto;
+    font-size: 1rem;
+    font-weight: bold;
+    height: 50px;
+  }
+}
+@media (max-width: 767.98px) {
+  p {
+    font-size: 3.5vw;
+  }
+  h3 {
+    font-size: 2vw;
+  }
+}
